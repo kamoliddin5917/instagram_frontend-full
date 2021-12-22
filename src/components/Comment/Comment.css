@@ -1,0 +1,21 @@
+.subcomment {
+  background: gold;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  margin-bottom: 5px;
+}
+.subcomment button {
+  background: red !important;
+  color: #fff !important;
+  margin-left: 5px;
+}
+.comment_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}

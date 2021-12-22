@@ -1,0 +1,127 @@
+.content {
+  width: 300px;
+  margin-bottom: 20px;
+
+  position: relative;
+}
+.content__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 5px;
+}
+.content__link img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.content__link h3 {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+.content__img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+.content__video {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+.post_media {
+  list-style: none;
+  display: flex;
+
+  overflow-x: scroll;
+}
+.post_delete {
+  background-color: red !important;
+  color: gold !important;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-post_update {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(255, 215, 0, 0.5);
+  cursor: pointer;
+
+  transition: all 0.4s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 7;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: scale(0.5);
+}
+.modal-post_update-active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.form-post_update {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post_name {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+}
+.modal-post_update-exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red !important;
+  color: #fff !important;
+}
+.post_name-update {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+}
+.comment_write {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+}
+.comment_write input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 2px;
+  background: transparent;
+}
+.comment_write input::placeholder {
+  color: #fff;
+}
